@@ -5,20 +5,36 @@ body {
   padding: 0;
   background-image: url(bg.jpg);
   background-size: cover;
+  background-attachment: fixed;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 .box {
   background: linergradient(to right #fecedc, #ebe2d9, #bddee7);
   background-image: linear-gradient(to bottom right, #bddee7, #ebe2d9, #fecedc);
   padding: 50px;
-  width: 450px;
+  width: 400px;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 3%;
   color: white;
   text-align: center;
   border-radius: 10%;
   box-shadow: 1px 5px 5px rgb(179, 179, 177);
 }
+@media screen and (max-width: 768px) {
+  .box {
+    width: 300px;
+    border-radius: 3%;
+    transition: 0.3s;
+  }
+  .box h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
 .box img {
   border-radius: 50%;
   width: 200px;
@@ -54,13 +70,25 @@ ul {
 }
 .box li a {
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   transition: all ease-in-out 250ms;
 }
 .box li a:hover {
   color: #dacdcd;
-  font-size: 60px;
+  font-size: 50px;
   transition: all ease-in-out 250ms;
+}
+.box .fa-linkedin:hover {
+  color: #1666c5;
+}
+.box .fa-twitter:hover {
+  color: #1da1f2;
+}
+.box .fa-instagram:hover {
+  color: #fd5949;
+}
+.box .fa-github:hover {
+  color: #171515;
 }
 #footer .copyright {
   text-align: center;
